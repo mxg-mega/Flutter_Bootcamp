@@ -3,5 +3,22 @@ import 'dart:core';
 
 void main()
 {
-  List<double> scores = [70, 34, 65, 55, 90, 100, 87, ];
+  int passMark = 60;
+  int score, average;
+
+  print("what is the student's score: ");
+  score = stdin.readByteSync();
+
+  print("what is the class average: ");
+  average = stdin.readByteSync();
+
+  if(score >= passMark)
+  {
+    print("you pass ;)");
+  }
+  else
+  {
+    print("try Harder next time but you failed :(");
+  }
+
 }

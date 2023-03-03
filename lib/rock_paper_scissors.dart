@@ -9,7 +9,7 @@ import 'dart:core';
 void main()
 {
   String? input, name;
-  String random_choices;
+  String randomChoices;
   int randomNumber;
 
   Random random = new Random();
@@ -30,35 +30,35 @@ void main()
 
 
     //Generation of random choices
-    random_choices = keywords[randomNumber];
+    randomChoices = keywords[randomNumber];
 
     //user : rock , system : paper
-    if (input == "rock" && random_choices == "paper") {
+    if (input == "rock" && randomChoices == "paper") {
       print("HoHo! I won, paper wraps rock  better luck next time");
     }
     //user : paper , system : scissors
-    else if (input == "paper" && random_choices == "scissors") {
+    else if (input == "paper" && randomChoices == "scissors") {
       print("scissors cuts paper, So its your lost Better luck next time ;]`");
     }
     //user : paper , system : scissors
-    else if (input == "scissors" && random_choices == "rock") {
+    else if (input == "scissors" && randomChoices == "rock") {
       print("rock beats scissor, So its your lost Better luck next time ;]`");
     }
     //user : scissors , system : paper
-    else if (input == "scissors" && random_choices == "paper") {
+    else if (input == "scissors" && randomChoices == "paper") {
       print(
           "Oops! i lost and you WON!, Scissors cuts paper i'll try hard next time :)");
     }
-    else if (input == "paper" && random_choices == "rock") {
+    else if (input == "paper" && randomChoices == "rock") {
       print("Yay! You Won :]");
     }
-    else if (input == "rock" && random_choices == "scissors") {
+    else if (input == "rock" && randomChoices == "scissors") {
       print("Hhh! you won rock beats scissors ;)");
     }
     //user & system : same choice
-    else if (input == random_choices) {
+    else if (input == randomChoices) {
       print(
-          "hhh its the same choice '$random_choices', Let's try doing it again");
+          "hhh its the same choice '$randomChoices', Let's try doing it again");
     }
     else if(input == 'q')
     {
